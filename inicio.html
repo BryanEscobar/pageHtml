@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" href="estilos.css">
+
+    
+    <style>
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background:khaki;
+}
+.top{
+
+    text-align:right;
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 100%;
+	margin: 30px auto;
+	background-color: white;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+.menu li{
+    flex-grow: 1;
+}
+
+.menu > li{
+	position: relative;
+    display: inline-block;
+ 
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+h2{
+	background-color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <div id="top">
+        <div>
+        
+            <br>   <br>   <br>
+          <legend> <span class="dir" ><i class="fa fa-map-marker"></i> Dirección: 4ta calle 30-07,Jardines de la Asunción, Zona 5, Guatemala 01005<br />
+            <i class="fas fa-map-marked-alt icon"></i> Teléfonos: 2235-4000 / 2245-4704<br />
+            <i class="fa fa-envelope"></i> Email: ventas@efdistribuciones.com.gt</span>
+            <p style="text-align: justify;">
+            <div class="clear"></div>
+        </div></legend> 
+    </div>
+	<header>
+		<nav class="navegacion">
+			<ul class="menu">
+				<li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Inciar Sesion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca de Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                
+				<li><a href="#">Categorias</a>
+					<ul class="submenu">
+						<li><a href="grapas.html">Grapas</a></li>
+						<li><a href="esquineros.html">Equineros para patelizar</a></li>
+						<li><a href="burbuja.html">Burbuja</a></li>
+						<li><a href="strech.html">Stretch Film</a></li>
+						<li><a href="cintas.html">Cintas de Empaque</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+        </nav>
+        <section id="fondo">
+           <center><img src="./imagenes/fondp.png"></center> 
+    
+        </section>
+        <br><br><br><br><br><br>
+		<h2> <div class="contenedor">
+       <p style="text-align: right;">
+            <span style="font-size:22px;"><em><strong>Trabajamos con tarjetas:</strong> </span></p>
+        <p style="text-align: justify;">
+            <span style="font-size:22px;">Somos una empresa dedicada a brindar servicios y productos de calidad en el &aacute;rea de empaque y embalaje, para el comercio local y de exportaci&oacute;n. Ofrecemos diversidad de productos en las l&iacute;neas de: fleje, herramientas y equipo de flejado, grapas y engrapadoras, cinta de empaque, stretch film, polifoam y burbuja pl&aacute;stica, esquinero para paletizar, material para rotular, entre otros. </span></p>
+        <p>
+            <span style="font-size: 22px;">Contamos con servicio a domicilio en Guatemala.</span></p>
+      
+        </div></h2>
+        <br><br>
+
+    </header>
+    
+</body>
+</html>
